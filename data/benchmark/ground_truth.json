@@ -1,0 +1,457 @@
+{
+  "correspondences": [
+    {
+      "legacy_id": "P-104",
+      "reference_ids": [
+        "P-202",
+        "P-203"
+      ],
+      "relation_type": "SPLIT"
+    },
+    {
+      "legacy_id": "P-020",
+      "reference_ids": [
+        "P-230"
+      ],
+      "relation_type": "MERGE"
+    },
+    {
+      "legacy_id": "P-021",
+      "reference_ids": [
+        "P-230"
+      ],
+      "relation_type": "MERGE"
+    },
+    {
+      "legacy_id": "P-001",
+      "reference_ids": [
+        "S-001"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-002",
+      "reference_ids": [
+        "S-002"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-003",
+      "reference_ids": [
+        "S-003"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-004",
+      "reference_ids": [
+        "S-004"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-005",
+      "reference_ids": [
+        "S-005"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-006",
+      "reference_ids": [
+        "S-006"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-007",
+      "reference_ids": [
+        "S-007"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-008",
+      "reference_ids": [
+        "S-008"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-009",
+      "reference_ids": [
+        "S-009"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-010",
+      "reference_ids": [
+        "S-010"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-011",
+      "reference_ids": [
+        "S-011"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-012",
+      "reference_ids": [
+        "S-012"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-103",
+      "reference_ids": [
+        "S-103"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-015",
+      "reference_ids": [
+        "S-015"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-016",
+      "reference_ids": [
+        "S-016"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-017",
+      "reference_ids": [
+        "S-017"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-018",
+      "reference_ids": [
+        "S-018"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-019",
+      "reference_ids": [
+        "S-019"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-022",
+      "reference_ids": [
+        "S-022"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-023",
+      "reference_ids": [
+        "S-023"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-024",
+      "reference_ids": [
+        "S-024"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-025",
+      "reference_ids": [
+        "S-025"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-026",
+      "reference_ids": [
+        "S-026"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-027",
+      "reference_ids": [
+        "S-027"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-028",
+      "reference_ids": [
+        "S-028"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-029",
+      "reference_ids": [
+        "S-029"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-030",
+      "reference_ids": [
+        "S-030"
+      ],
+      "relation_type": "ONE_TO_ONE"
+    },
+    {
+      "legacy_id": "P-026",
+      "reference_ids": [],
+      "relation_type": "NO_MATCH"
+    }
+  ],
+  "injected_conflicts": [
+    {
+      "parcel_id": "P-001",
+      "conflict_type": "OVERLAP",
+      "description": "Parcel shifted 5m right in legacy creating overlap"
+    },
+    {
+      "parcel_id": "P-008",
+      "conflict_type": "GAP",
+      "description": "Parcel shrunk by 2m buffer creating gap in legacy"
+    },
+    {
+      "parcel_id": "P-103",
+      "conflict_type": "CASE_B_ATTRIBUTE",
+      "description": "revenue_area +19% and survey_no = SN-AMBIG in legacy"
+    },
+    {
+      "parcel_id": "P-015",
+      "conflict_type": "CASE_A_DISPLACEMENT",
+      "description": "Additional 4m displacement applied to this parcel"
+    },
+    {
+      "parcel_id": "P-026",
+      "conflict_type": "NO_MATCH",
+      "description": "Parcel exists in truth but missing from legacy"
+    }
+  ],
+  "distortion_params": {
+    "translation": [
+      1.2,
+      -0.7
+    ],
+    "rotation_deg": 0.8,
+    "scale": 1.002,
+    "vertex_noise": 0.15,
+    "warp_type": "sinusoidal_global",
+    "warp_max_amplitude": 1.5,
+    "warp_min_amplitude": 0.3,
+    "rotation_origin": [
+      500132.34602239454,
+      3000085.009525553
+    ]
+  },
+  "control_point_pairs": [
+    {
+      "id": "CP-01",
+      "region": "SE",
+      "source": [
+        500222.8252013163,
+        3000064.0160992136
+      ],
+      "target": [
+        500220.0010447751,
+        3000064.6523121027
+      ]
+    },
+    {
+      "id": "CP-02",
+      "region": "SE",
+      "source": [
+        500228.0854641908,
+        3000030.3859327524
+      ],
+      "target": [
+        500224.63975248364,
+        3000029.6999082025
+      ]
+    },
+    {
+      "id": "CP-03",
+      "region": "SW",
+      "source": [
+        500048.18682931806,
+        2999998.8056040867
+      ],
+      "target": [
+        500044.9503859379,
+        2999999.8707980243
+      ]
+    },
+    {
+      "id": "CP-04",
+      "region": "SE",
+      "source": [
+        500176.3979345147,
+        3000064.1470716223
+      ],
+      "target": [
+        500174.90638686146,
+        3000065.3140203846
+      ]
+    },
+    {
+      "id": "CP-05",
+      "region": "SE",
+      "source": [
+        500223.31064385764,
+        3000035.018856371
+      ],
+      "target": [
+        500219.96187723026,
+        3000034.661271779
+      ]
+    },
+    {
+      "id": "CP-06",
+      "region": "SW",
+      "source": [
+        500047.1642589459,
+        3000062.1161592007
+      ],
+      "target": [
+        500045.0592071607,
+        3000064.803950098
+      ]
+    },
+    {
+      "id": "CP-07",
+      "region": "SE",
+      "source": [
+        500266.4260645225,
+        3000065.345182263
+      ],
+      "target": [
+        500264.6180059021,
+        3000065.4618976647
+      ]
+    },
+    {
+      "id": "CP-08",
+      "region": "SW",
+      "source": [
+        500086.61476864864,
+        3000062.8353396934
+      ],
+      "target": [
+        500085.13471832,
+        3000065.0535794008
+      ]
+    },
+    {
+      "id": "CP-09",
+      "region": "NE",
+      "source": [
+        500266.1049417548,
+        3000137.7287043817
+      ],
+      "target": [
+        500265.27740483824,
+        3000135.471826426
+      ]
+    },
+    {
+      "id": "CP-10",
+      "region": "NE",
+      "source": [
+        500265.85813087696,
+        3000101.2998495298
+      ],
+      "target": [
+        500264.5216120799,
+        3000100.3262919243
+      ]
+    },
+    {
+      "id": "CP-11",
+      "region": "SW",
+      "source": [
+        500002.5113013545,
+        2999998.1508779796
+      ],
+      "target": [
+        500000.27395604854,
+        2999999.93887844
+      ]
+    },
+    {
+      "id": "CP-12",
+      "region": "SE",
+      "source": [
+        500177.223019783,
+        3000034.910827186
+      ],
+      "target": [
+        500175.2838982091,
+        3000035.1643135403
+      ]
+    },
+    {
+      "id": "CP-13",
+      "region": "NE",
+      "source": [
+        500135.2532651576,
+        3000098.6448285994
+      ],
+      "target": [
+        500135.09091549146,
+        3000099.522803871
+      ]
+    },
+    {
+      "id": "CP-14",
+      "region": "NW",
+      "source": [
+        500090.8706584037,
+        3000098.3418562007
+      ],
+      "target": [
+        500089.99399081926,
+        3000099.8298612125
+      ]
+    },
+    {
+      "id": "CP-15",
+      "region": "SE",
+      "source": [
+        500223.1528367109,
+        3000030.7641048264
+      ],
+      "target": [
+        500219.72690934903,
+        3000030.169813995
+      ]
+    },
+    {
+      "id": "CP-16",
+      "region": "NE",
+      "source": [
+        500180.6810533502,
+        3000105.2309659277
+      ],
+      "target": [
+        500179.5944666681,
+        3000105.2467896114
+      ]
+    }
+  ]
+}

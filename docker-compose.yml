@@ -1,0 +1,54 @@
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    platform: linux/amd64
+    environment:
+      POSTGRES_USER: cadastral
+      POSTGRES_PASSWORD: cadastral
+      POSTGRES_DB: cadastral_fusion
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cadastral -d cadastral_fusion"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: postgresql+psycopg2://cadastral:cadastral@db:5432/cadastral_fusion
+      DATA_DIR: /data
+      AI_SERVICE_ROLE: AI_SERVICE
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/data
+      - .:/app
+    depends_on:
+      db:
+        condition: service_healthy
+    command: >
+      sh -c "alembic upgrade head &&
+             python scripts/seed_benchmark.py &&
+             uvicorn backend.api.main:app --host 0.0.0.0 --port 8000 --reload"
+
+  web:
+    image: node:20-alpine
+    working_dir: /web
+    volumes:
+      - ./web:/web
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_URL: http://localhost:8000
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    depends_on:
+      - api
+
+volumes:
+  pgdata:
